@@ -1,4 +1,5 @@
-import CryptoJS from "crypto-js";
+const {CryptoJS} = require("crypto-js");
+
 window.addEventListener("load", ()=>{
     const telegram = window.Telegram.WebApp;
     telegram.ready()
