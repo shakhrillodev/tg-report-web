@@ -7,7 +7,7 @@ window.addEventListener("load", ()=>{
         telegramInitData, BOT_TOKEN)
     {
       const initData = new URLSearchParams(telegramInitData);
-      let dataToCheck;
+      let dataToCheck = [];
     
       initData.sort();
       initData.forEach((val, key) => key !== 'hash' && dataToCheck.push(`${key}=${val}`));
