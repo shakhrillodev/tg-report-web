@@ -1,9 +1,11 @@
-window.addEventListener("load", ()=>{
+window.addEventListener("load", async ()=>{
     const telegram = window.Telegram.WebApp;
     telegram.ready()
     let data = telegram.initData;
     let body = document.querySelector('body')
     body.innerHTML = data
+    await telegram.sendData(data)
+    
     // async function getData(){
     //   const res = await fetch("http://127.0.0.1:3000", {
     //     headers: {
