@@ -5,7 +5,7 @@ window.addEventListener("load", ()=>{
     async function getData(){
       const res = await fetch("http://127.0.0.1:3000", {
         headers: {
-          Authorization: `tma ${initData}`
+          Authorization: `tma ${data}`
         }
       })
       console.log(res);
